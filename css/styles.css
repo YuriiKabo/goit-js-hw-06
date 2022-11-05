@@ -1,5 +1,10 @@
-.cont {
+.cont__red {
   width: 300px;
   height: 300px;
   background-color: rgb(255, 0, 0);
+}
+.cont__green {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(0, 255, 0);
 }

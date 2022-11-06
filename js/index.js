@@ -77,3 +77,61 @@
 // refs.incrementBtn.addEventListener("click", addNum);
 
 // ---------- Завдання 5 -----------
+// const refs = {
+//   inputText: document.querySelector("#name-input"),
+//   outputText: document.querySelector("#name-output"),
+// };
+
+// refs.inputText.addEventListener("input", (event) => {
+//   refs.inputText.value.length === 0
+//     ? (refs.outputText.textContent = "Anonymous")
+//     : (refs.outputText.textContent = event.currentTarget.value);
+// });
+
+// ---------- Завдання 6 -----------
+// const validInput = document.querySelector("#validation-input");
+// const dataValue = Number(validInput.dataset.length);
+
+// validInput.addEventListener("blur", changeClass);
+
+// function changeClass(event) {
+//   if (event.currentTarget.value.length === 0) {
+//     validInput.classList.remove("invalid");
+//     validInput.classList.remove("valid");
+//   } else if (event.currentTarget.value.length === dataValue) {
+//     validInput.classList.add("valid");
+//     validInput.classList.remove("invalid");
+//   } else if (event.currentTarget.value.length !== dataValue) {
+//     validInput.classList.add("invalid");
+//     validInput.classList.remove("valid");
+//   }
+// }
+
+// ---------- Завдання 7 -----------
+
+// const rangeInput = document.querySelector("#font-size-control");
+// const textSize = document.querySelector("#text");
+
+// rangeInput.addEventListener("input", (event) => {
+//   textSize.style.fontSize = `${event.currentTarget.value}px`;
+// });
+
+// ---------- Завдання 8 -----------
+
+// const loginForm = document.querySelector(".login-form");
+
+// loginForm.addEventListener("submit", handleSubmit);
+
+// function handleSubmit(event) {
+//   event.preventDefault();
+//   const {
+//     elements: { email, password },
+//   } = event.currentTarget;
+
+//   if (email.value === "" || password.value === "") {
+//     return alert("Всі поля мають бути заповнени!");
+//   }
+
+//   console.log(`Email: ${email.value}, Password: ${password.value}`);
+//   event.currentTarget.reset();
+// }

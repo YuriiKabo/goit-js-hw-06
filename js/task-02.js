@@ -17,3 +17,5 @@ const createItems = ingredients.map((ingredient) => {
 });
 
 ingredientList.append(...createItems);
+
+console.log(createItems);

@@ -4,7 +4,7 @@ const refsAn = {
 };
 
 refsAn.inputText.addEventListener("input", (event) => {
-  refsAn.inputText.value.length === 0
+  refsAn.inputText.value === ""
     ? (refsAn.outputText.textContent = "Anonymous")
     : (refsAn.outputText.textContent = event.currentTarget.value);
 });
